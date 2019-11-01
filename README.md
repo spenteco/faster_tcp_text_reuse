@@ -11,8 +11,11 @@ The important stuff:
 * **02_shingle_matching_from_sqlite3.ipynb** -- For any text (or, obviously, for any text in a lsit of texts), answers the question, "What sequences of tokens in this text occurs in other texts?"  Which is more or less the same as asking, "What texts does this text quote, and what texts quote this text?"  Run times for this process depends on a) the kind of device on which the sqlite database is mounted (I have my copy on an SSD); b) the state the file system cache (things run faster of the process finds pages from the database in the cache); and c) the number of texts which share sequences of tokens with the text being matched.  On my workstation, I'm seeing times like:
 
 >   Herrick, *Hesperides*: 53 seconds
+
 >   Spenser, *Faerie Queene*: 48 seconds
+
 >   Browne, *Hydriotaphia*: 10 seconds
+
 >   *Englands Parnassus*, 28 seconds
 
 I don't have times for longer texts . . . 
