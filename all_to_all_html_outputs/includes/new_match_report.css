@@ -1,0 +1,129 @@
+
+body {
+    font-size: 12px;
+}
+
+.links {
+    background-color: #FFFF99;
+}
+
+#from_text_metadata {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+.from_tcp_id {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.from_year {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.from_author {
+    padding-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+
+.from_title {
+    padding-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+
+#all_matches_report {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#all_matches_table {
+    display: none;
+}
+
+#all_matches_table thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+
+.matching_text_metadata {
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+.mtm_year {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.mtm_author {
+    padding-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+
+.mtm_title {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+
+.matching_text {
+    width: 700px;
+    padding-bottom: 10px;
+}
+
+.numeric_field {
+    text-align: right;
+} 
+
+#left_pane {
+    width: 700px;
+    float: left;
+    border-right: 1px solid black;
+}
+
+#from_text {
+    padding-right: 10px;
+}
+
+#clicked_match_details {
+    width: 700px;
+    float: left;
+    padding-left: 10px;
+}
+
+.metadata_display_line {
+    padding-bottom: 5px;
+}
+
+.mdl_tcp_id {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.mdl_year {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.mdl_author {
+    padding-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+
+.mdl_title {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
