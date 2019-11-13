@@ -1,6 +1,6 @@
 # faster_tcp_text_reuse
 
-A faster set of routines for find text reuse in the EEBO-TCP corpus, building upon an earlier repo [an earlier repo](https://github.com/spenteco/tcp_text_reuse), which was organized/optimized around finding quotations from the Bible.  This repo, on the other hand, is more generalized, and is intended as a basis for finding **all** text reuse in the corpus.
+A faster set of routines for finding text reuse in the EEBO-TCP corpus, building upon [an earlier repo](https://github.com/spenteco/tcp_text_reuse), which was organized/optimized around finding quotations from the Bible.  This repo, on the other hand, is more generalized, and is intended as a basis for finding **all** text reuse in the corpus.
 
 ## Components
 
