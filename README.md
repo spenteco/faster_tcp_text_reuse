@@ -34,7 +34,13 @@ I've experimented with several different approaches, and I don't think I'm going
 
 ## Next steps
 
-1.  Desk check *Englands Parnassus*, which seems like a good test case.  Are the results correct>
+1.  Desk check *Englands Parnassus*, which seems like a good test case.  Are the results correct?
+
+2.  Enhance the output reports.
+
+3.  Let it run over the week of Thanksgiving.  How many can we get done?
+
+4.  Figure out what to do about the highly reused texts (e.g., Bibles) which won't run through these processes.
 
 
 
