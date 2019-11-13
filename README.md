@@ -10,25 +10,31 @@ The important stuff:
 
 * **02_shingle_matching_from_sqlite3.ipynb** -- For any text (or, obviously, for any text in a lsit of texts), answers the question, "What sequences of tokens in this text occurs in other texts?"  Which is more or less the same as asking, "What texts does this text quote, and what texts quote this text?"  Run times for this process depends on a) the kind of device on which the sqlite database is mounted (I have my copy on an SSD); b) the state the file system cache (things run faster of the process finds pages from the database in the cache); and c) the number of texts which share sequences of tokens with the text being matched.  On my workstation, I'm seeing times like:
 
->   Herrick, *Hesperides*: 53 seconds
+>   Herrick, *Hesperides*: 5 seconds
 
->   Spenser, *Faerie Queene*: 48 seconds
+>   Spenser, *Faerie Queene*: 20 seconds
 
->   Browne, *Hydriotaphia*: 10 seconds
+>   Browne, *Hydriotaphia*: 3 seconds
 
->   *Englands Parnassus*, 28 seconds
+>   *Englands Parnassus*, 9 seconds
 
-I don't have times for longer texts . . . 
+>   Burton, *Anatomy*, 334 seconds
+
+>   *Book of Common Prayer* (1553), 3,346 seconds (i.e., 1 hour)
+
+I've experimented with several different approaches, and I don't think I'm going to get times much better than these . . . 
 
 * **matching_functions.py** -- Functions used by the notebooks.
 
 * **all_to_all_html_outputs** -- Human readable results are written here.
 
+* **match_worker.py** -- A version of the code in 02_shingle_matching_from_sqlite3.ipynb which runs as a stand-alone script.
+
+* **match_controller.py** -- A script which manages running match_worker.py processes in parallel.  Starts new match_workers as old ones finish.  Checks to see if a text has been processed before starting a match_worker for it.  Kills long-running match_worker processes so we can finish as many short-running processes as possible.
+
 ## Next steps
 
-1.  Get timings for some longer texts (Burton, the Book of Common Prayer, and the Geneva Bible).
-
-2.  Migrate the function in 02_shingle_matching_from_sqlite3.ipynb to some parallelized process, and try running it on everything.
+1.  Desk check *Englands Parnassus*, which seems like a good test case.  Are the results correct>
 
 
 
